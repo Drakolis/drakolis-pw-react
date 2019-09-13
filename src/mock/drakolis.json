@@ -1,0 +1,79 @@
+{
+  "name": "Mika Drakolis",
+  "title": "Mathematician, Developer, Dragon",
+  "photoUrl": "https://secure.gravatar.com/avatar/8b703469859381a6fac4af8acf351188?s=500",
+  "avatarUrl": "https://secure.gravatar.com/avatar/8b703469859381a6fac4af8acf351188?s=500",
+  "dateOfBirth": "23.05.1993",
+  "sex": "Female Trans (MtF)",
+  "orientation": "Pansexual",
+  "likes": [
+    ["Animals", ":lizard:"],
+    ["Food", ":spaghetti:"],
+    ["Science", ":telescope:"],
+    ["Night", ":city_sunset:"],
+    ["Role-playing Games", ":crossed_swords:"]
+  ],
+  "dislikes": [
+    ["Noise", ":loudspeaker:"],
+    ["Simple Tasks", ":sleeping:"],
+    ["Deadlines", ":hourglass_flowing_sand:"],
+    ["Cold", ":snowflake:"],
+    ["Uncertainty", ":question:"]
+  ],
+  "languages": [
+    ["Russian", ":flag-ru:", "Native"],
+    ["English", ":flag-gb:", "Almost Perfect"],
+    ["Dovahzul (Dragon Language)", ":dragon_face:", "Good"],
+    ["Spanish", ":flag-es:", "A Bit"]
+  ],
+  "skills": [
+    ["C#", "", ["Asp.NET", "CodedUI", "Selenium", "Unity"], false],
+    ["JavaScript", "", ["Node.js", "React", "Vue", "TypeScript"], false],
+    ["SQL", "", ["MySQL", "PostgreSQL", "SQLite", "Oracle"], false],
+    ["Python", "", ["Odoo Modules", "Flask", "Django", "Scientific Projects"], false],
+    ["Java", "", ["Selenium", "Cucumber", "Minecraft Sources"], false],
+    ["Elixir", "", ["Phoenix"], false]
+  ],
+
+  "location": "Cyprus, Limassol",
+  "contacts": [
+    {
+      "type": "telegram",
+      "url": "https://t.me/drakolis"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/drakolis_66/"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/DrakonLisowski"
+    },
+    {
+      "type": "vk",
+      "url": "https://vk.com/drakolis"
+    },
+    {
+      "type": "facebook",
+      "url": "https://facebook.com/drakolis"
+    },
+    {
+      "type": "skype",
+      "url": "skype:dragon.fox.66@yandex.ru"
+    },
+    {
+      "type": "mail",
+      "url": "mailto:mika.drakolis@gmail.com"
+    }
+  ],
+  "apis": [
+    {
+      "param": "76561198038432884",
+      "type": "steam"
+    },
+    {
+      "param": "drakolis66",
+      "type": "lastfm"
+    }
+  ]
+}
