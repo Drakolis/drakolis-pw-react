@@ -5,7 +5,7 @@
   "avatarUrl": "https://secure.gravatar.com/avatar/8b703469859381a6fac4af8acf351188?s=500",
   "dateOfBirth": "23.05.1993",
   "sex": "Female Trans (MtF)",
-  "orientation": "Pansexual",
+  "languages": "Russian, English",
   "likes": [
     ["Animals", ":lizard:"],
     ["Food", ":spaghetti:"],
@@ -20,12 +20,6 @@
     ["Cold", ":snowflake:"],
     ["Uncertainty", ":question:"]
   ],
-  "languages": [
-    ["Russian", ":flag-ru:", "Native"],
-    ["English", ":flag-gb:", "Almost Perfect"],
-    ["Dovahzul (Dragon Language)", ":dragon_face:", "Good"],
-    ["Spanish", ":flag-es:", "A Bit"]
-  ],
   "skills": [
     ["C#", "", ["Asp.NET", "CodedUI", "Selenium", "Unity"], false],
     ["JavaScript", "", ["Node.js", "React", "Vue", "TypeScript"], false],
@@ -33,6 +27,23 @@
     ["Python", "", ["Odoo Modules", "Flask", "Django", "Scientific Projects"], false],
     ["Java", "", ["Selenium", "Cucumber", "Minecraft Sources"], false],
     ["Elixir", "", ["Phoenix"], false]
+  ],
+  "expirience": [
+    [
+      "Web Development (Fullstack)",
+      "This is my main area of expertise. I've built almost anything: from simple blogs, to complex CRMs, from common rest applications, to pretty unusual socket-based chats. I had experience with both SSR and single-page applications, and usualy took part in both frontend and backend development. I must admit, that my frontend skills are kind of lower than backed, but I still try to develop both of further.",
+      ["Node.JS", "JavaScript", "TypeScript", "Express.JS", "React.JS", "Vue.JS", "ASP.net", "Elixir", "Pheonix", "Various SQL DBs", "MongoDB", "Redis", "Rabbit MQ"]
+    ],
+    [
+      "Test Automation (UI, API, Unit)",
+      "I had some experience in software testing, mostly because my teams usually lacked a designated Autotest Engineer, or he sometimes needed help and support from a frontend/backend person to get things done. This was not my main area of work, but I sometimes had to write, rewiev or improve internal testing tools, so I do understand a lot of things here.",
+      ["CodedUI", "Selenium", "Java", "C#", "Cucumber", "SpecFlow"]
+    ],
+    [
+      "Game Development (Hobby)",
+      "Even though it's just a hobby, I always wanted to be a real game developer. I was always into games, had some ideas of my own, but always lacked resources to create something. For now it's just a dream, but who knows what will happen tomorrow.",
+      ["Unity", "C#", "JavaScript"]
+    ]
   ],
 
   "location": "Cyprus, Limassol",

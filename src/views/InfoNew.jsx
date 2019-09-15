@@ -4,7 +4,6 @@ import {
   Calendar,
   MapMarker,
   GenderTransgender,
-  HumanMaleFemale,
   Vk,
   Facebook,
   Twitter,
@@ -17,6 +16,7 @@ import {
   Discord,
   GithubCircle,
   Telegram,
+  Translate,
 } from 'mdi-material-ui';
 import {
   Grid,
@@ -32,6 +32,8 @@ import {
   Card,
   Typography,
 } from '@material-ui/core';
+import Likes from '../components/info/Likes';
+import ExpirienceEntry from '../components/info/ExpirienceEntry';
 import data from '../mock/drakolis.json';
 
 const BaseHeader = styled.h1`
@@ -58,7 +60,12 @@ const BlockDivider = styled(Divider)`
 
 const MyPhoto = styled(CardMedia)`
   width: 100%;
-  height: 400px;
+  height: 300px;
+`;
+
+const Container = styled(Grid)`
+  max-width: 1200px;
+  margin: auto !important;
 `;
 
 const mapContact = contact => {
@@ -177,12 +184,11 @@ class InfoNew extends Component {
       dateOfBirth,
       location,
       sex,
-      orientation,
       contacts,
       likes,
       dislikes,
       languages,
-      skills,
+      expirience,
     } = this.state;
     const mappedContacts = contacts.map(c => mapContact(c));
     const aboutMeEntries = [
@@ -202,13 +208,13 @@ class InfoNew extends Component {
         value: sex,
       },
       {
-        icon: HumanMaleFemale,
-        title: 'Orientation',
-        value: orientation,
+        icon: Translate,
+        title: 'Languages',
+        value: languages,
       },
     ];
     return (
-      <Grid container spacing={3} alignItems="stretch" direction="column">
+      <Container container spacing={3} alignItems="stretch" direction="column">
         <Grid item xs={12}>
           <Name>{name}</Name>
           <Title>{title}</Title>
@@ -224,7 +230,7 @@ class InfoNew extends Component {
             alignItems="flex-start"
             direction="row"
           >
-            <Grid container xs={4} spacing={2} justify="flex-start">
+            <Grid container xs={3} spacing={2} justify="flex-start">
               <Grid item xs={12}>
                 <Card>
                   <MyPhoto image={photoUrl} title="It's me!" />
@@ -250,73 +256,20 @@ class InfoNew extends Component {
                 </Card>
               </Grid>
             </Grid>
-            <Grid container xs={4} spacing={2} justify="flex-start">
+            <Grid container xs={3} spacing={2} justify="flex-start">
               <Grid item xs={12}>
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Languages I Speak
-                    </Typography>
-                    <List>
-                      {languages.map(i => (
-                        <ListItem>
-                          <ListItemText primary={i[0]} secondary={i[2]} />
-                        </ListItem>
-                      ))}
-                    </List>
-                  </CardContent>
-                </Card>
+                <Likes name="I Like" array={likes} />
               </Grid>
               <Grid item xs={12}>
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      I Have Experience In
-                    </Typography>
-                    <List>
-                      {skills.map(i => (
-                        <ListItem>
-                          <ListItemText primary={i[0]} />
-                        </ListItem>
-                      ))}
-                    </List>
-                  </CardContent>
-                </Card>
+                <Likes name="I Dislike" array={dislikes} />
               </Grid>
             </Grid>
-            <Grid container xs={4} spacing={2} justify="flex-start">
-              <Grid item xs={12}>
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      I Like
-                    </Typography>
-                    <List>
-                      {likes.map(i => (
-                        <ListItem>
-                          <ListItemText primary={i[0]} />
-                        </ListItem>
-                      ))}
-                    </List>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={12}>
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      I Dislike
-                    </Typography>
-                    <List>
-                      {dislikes.map(i => (
-                        <ListItem>
-                          <ListItemText primary={i[0]} />
-                        </ListItem>
-                      ))}
-                    </List>
-                  </CardContent>
-                </Card>
-              </Grid>
+            <Grid container xs={6} spacing={2} justify="flex-start">
+              {expirience.map(i => (
+                <Grid item xs={12}>
+                  <ExpirienceEntry name={i[0]} description={i[1]} tech={i[2]} />
+                </Grid>
+              ))}
             </Grid>
           </Grid>
         </Grid>
@@ -341,7 +294,7 @@ class InfoNew extends Component {
         <Grid item xs={12}>
           <BlockDivider light variant="fullWidth" />
         </Grid>
-      </Grid>
+      </Container>
     );
   }
 }

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import InfoNew from './views/InfoNew';
 
 const Padder = styled.div`
-  width: 100vw;
   padding: 0 5rem;
 `;
 
