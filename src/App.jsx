@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import InfoNew from './views/InfoNew';
+import AppRouter from './AppRouter';
 
 const Padder = styled.div`
   padding: 0 5rem;
@@ -9,7 +9,7 @@ const Padder = styled.div`
 export default function App() {
   return (
     <Padder>
-      <InfoNew />
+      <AppRouter />
     </Padder>
   );
 }
