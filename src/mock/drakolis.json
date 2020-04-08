@@ -31,22 +31,22 @@
   "expirience": [
     [
       "Web Development (Fullstack)",
-      "This is my main area of expertise. I've built almost anything: from simple blogs, to complex CRMs, from common rest applications, to pretty unusual socket-based chats. I had experience with both SSR and single-page applications, and usualy took part in both frontend and backend development. I must admit, that my frontend skills are kind of lower than backed, but I still try to develop both of further.",
-      ["Node.JS", "JavaScript", "TypeScript", "Express.JS", "React.JS", "Vue.JS", "ASP.net", "Elixir", "Pheonix", "Various SQL DBs", "MongoDB", "Redis", "Rabbit MQ"]
+      "This is my main area of expertise. I've built almost anything: from simple blogs to complex CRMs, from common rest applications, to pretty unusual socket-based chats. I had experience with both SSR and single-page applications and usually took part in both frontend and backend development. I must admit, that my frontend skills are kind of lower than backend, but I still try to develop both of them further.",
+      ["Node.JS", "JavaScript", "TypeScript", "Express.JS", "React.JS", "Vue.JS", "ASP.net", "Various SQL DBs", "MongoDB", "Redis", "Rabbit MQ"]
     ],
     [
       "Test Automation (UI, API, Unit)",
-      "I had some experience in software testing, mostly because my teams usually lacked a designated Autotest Engineer, or they sometimes needed help and support from a frontend/backend person to get things done. This was not my main area of work, but I sometimes had to write, rewiev or improve internal testing tools, so I do understand a lot of things here.",
+      "I had some experience in software testing, mostly because my teams usually lacked a designated Autotest Engineer, or they sometimes needed help and support from a frontend/backend person to get things done. This was not my main area of work, but I sometimes had to write, review or improve internal testing tools, so I do understand a lot of things here.",
       ["CodedUI", "Selenium", "Java", "C#", "Cucumber", "SpecFlow"]
     ],
     [
       "Game Development (Hobby)",
-      "Even though it's just a hobby, I always wanted to be a real game developer. I was always into games, had some ideas of my own, but always lacked resources to create something. For now it's just a dream, but who knows what will happen tomorrow.",
+      "Even though it's just a hobby, I always wanted to be a real game developer. I was always into games, had some ideas of my own, but always lacked resources to create something. For now, it's just a dream, but who knows what will happen tomorrow.",
       ["Unity", "C#", "JavaScript"]
     ]
   ],
 
-  "location": "Cyprus, Limassol",
+  "location": "Germany, Leipzig",
   "contacts": [
     {
       "type": "telegram",
