@@ -1,6 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { List, ListItem, ListItemText, CardContent, Card, Typography } from '@material-ui/core';
+import {
+  List,
+  ListItem,
+  ListItemText,
+  CardContent,
+  Card,
+  Typography,
+  ListItemIcon,
+} from '@material-ui/core';
+import EmojiIcon from '../global/EmojiIcon';
 
 export default function Likes({ name, array }) {
   return (
@@ -12,6 +21,9 @@ export default function Likes({ name, array }) {
         <List>
           {array.map(i => (
             <ListItem>
+              <ListItemIcon>
+                <EmojiIcon emoji={i[1]} />
+              </ListItemIcon>
               <ListItemText primary={i[0]} />
             </ListItem>
           ))}
